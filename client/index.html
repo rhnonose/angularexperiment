@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>AngularJS Experiment</title>
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+      function ContentController(){
+        this.mensagem.ptbr = "Em Português";
+        this.mensagem.enus = "In English";
+      }
+    </script>
+  </head>
+  <body>
+    
+    
+    
+    <div ng-init="language='pt-BR'">
+      <div ng-show="language == 'pt-BR'">PTBR</div>
+      <div ng-show="language == 'en-US'">ENUS</div>
+    </div>
+    <div>
+      <input type="button" value="pt-BR" ng-click="language='pt-BR'">
+      <input type="button" value="en-US" ng-click="language='en-US'">
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+  </body>
+</html>
